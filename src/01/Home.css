@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    margin: 300px 0px 100px 200px;
+}
+
+.hero_title_1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero_title_2 {
+    color: #000;
+    font-family: "Roboto Slab";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.hero_title_3 {
+    color: #000;
+    font-family: "Pretendard JP";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.profile {
+    margin: 500px 100px 300px;
+}
+
+.img {
+    width: 200px;
+}
+
+.name {
+    margin: 70px 0 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.btn {
+    margin-right: 8px;
+    padding: 5px 10px;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    /* border-style: none; */
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.btn:hover {
+    color: beige;
+    background-color: rgb(0, 205, 75);
+    /* border-color: rgb(0, 205, 75); */
+    border-style: none;
+
+}
+
+
+
+/* PageTurner */
+
+.rising-section {
+  position: relative;
+  height: 100vh;           /* 스크롤 길이 확보 */
+}
+
+/* 아래에서 위로 차오르는 직사각형 */
+.rising-rect {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;            /* 화면 높이 */
+  background: #00cd4b;
+  transform-origin: bottom center;
+}

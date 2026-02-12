@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+header {
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navi {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/* header */
+
+li {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* NavLink 공통 스타일 */
+.nav-link { 
+  position: relative;
+  text-decoration: none;
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: rgb(0, 205, 75); 
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1.5px;
+  background-color: rgb(0, 205, 75);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* 활성 메뉴 */
+.nav-link--active {
+  color: rgb(0, 205, 75);
+}
+
+.nav-link--active::after {
+  transform: scaleX(1);
 }

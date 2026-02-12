@@ -22,7 +22,7 @@ function Home() {
         </div>
 
         <div className='profile_info'>
-          <h3 className='name'>권세린</h3>
+          <h3 className='name'>세린</h3>
 
           <div className='tools'>
             <button className='btn'>Figma</button>

@@ -1,0 +1,47 @@
+.portfolio-page {
+  min-height: 100vh;
+  padding: 56px 48px 24px;
+}
+
+.portfolio-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(124px, 1fr));
+  grid-template-rows: repeat(7, auto);
+  grid-auto-flow: dense;
+  gap: 40px;
+  width: 100%;
+  min-width: calc((124px * 7) + (40px * 6));
+  margin: 0;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.portfolio-item__index {
+  font-size: 10px;
+  line-height: 4;
+  letter-spacing: 0.08em;
+  color: #111;
+}
+
+.portfolio-item__img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: #e9e9e9;
+}
+
+/* 2칸 병합 셀도 세로 길이는 동일하게 고정 */
+.portfolio-item--span2 .portfolio-item__img {
+  height: 240px;
+}

@@ -4,7 +4,7 @@
 }
 
 .hero {
-    margin: 300px 0px 100px 200px;
+    margin: 300px 0px 0px 200px;
 }
 
 .hero_title_1 {
@@ -36,7 +36,7 @@
 
 
 .profile {
-    margin: 500px 100px 300px;
+    margin: 100px 100px 300px;
 }
 
 .img {
@@ -68,21 +68,3 @@
 }
 
 
-
-/* PageTurner */
-
-.rising-section {
-  position: relative;
-  height: 100vh;           /* 스크롤 길이 확보 */
-}
-
-/* 아래에서 위로 차오르는 직사각형 */
-.rising-rect {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;            /* 화면 높이 */
-  background: #00cd4b;
-  transform-origin: bottom center;
-}

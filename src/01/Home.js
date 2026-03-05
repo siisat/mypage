@@ -1,6 +1,8 @@
 import './Home.css';
-import PageTurner from '../components/PageTurner';
+import PageTurner from '../components/PageTurner.js';
+import PageTurner_sticky from '../components/PageTurner_sticky.js'
 import img from './profile.png'
+import svg_profile from '../components/profile.svg'
 
 
 function Home() {
@@ -14,7 +16,7 @@ function Home() {
         <p className='hero_title_3'>こんにちは、世界!</p>
       </div>
 
-      <PageTurner/>
+      <PageTurner_sticky navOffset={39} titleSvgSrc={svg_profile} titleSvgAlt='PROFILE' />
 
       <div className='profile'>
         <div className='profile_img_box'>

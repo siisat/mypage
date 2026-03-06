@@ -6,16 +6,30 @@ const COLUMNS = 7;
 const ROWS = 7;
 const TOTAL_CELLS = COLUMNS * ROWS;
 
-// 셀별 이미지/확장 설정: key는 1~49 셀 번호
-// span: 2 이면 가로 2칸 이미지 (오른쪽 칸과 병합)
+
+// 셀별 이미지 편집
+// 셀번호 : { src: 이미지 파일 컴포넌트, alt: 'Work 셀번호' }
+
+// 1칸 이미지 편집
+const singleCellConfig = {
+  1: { src: timg, alt: 'Work 001' },
+  2: { src: timg, alt: 'Work 002' },
+  3: { src: timg, alt: 'Work 003' },
+};
 
 // 2칸 이미지 편집
-const cellConfig = {
+// span: 2 이면 가로 2칸 이미지 (오른쪽 칸과 병합)
+const doubleCellConfig = {
   5: { src: timg, span: 2, alt: 'Work 005' },
   13: { src: timg, span: 2, alt: 'Work 013' },
   22: { src: timg, span: 2, alt: 'Work 022' },
   31: { src: timg, span: 2, alt: 'Work 031' },
   40: { src: timg, span: 2, alt: 'Work 040' },
+};
+
+const cellConfig = {
+  ...singleCellConfig,
+  ...doubleCellConfig,
 };
 
 function pad3(num) {

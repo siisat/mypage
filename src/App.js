@@ -15,10 +15,10 @@ function AppContent() {
         <ul className='navi'>
           <li>
             <NavLink
-              to='/'
+              to='/siisat'
               className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
               onClick={(e) => {
-                if (currentLocation.pathname === '/') {
+                if (currentLocation.pathname === '/siisat') {
                   e.preventDefault();
                   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 }
@@ -29,16 +29,16 @@ function AppContent() {
           </li>
           <li>
             <NavLink
-              to='/Portfolio'
+              to='/'
               className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
               onClick={(e) => {
-                if (currentLocation.pathname === '/Portfolio') {
+                if (currentLocation.pathname === '/') {
                   e.preventDefault();
                   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
                 }
               }}
             >
-              Portfolio
+              portfolio
             </NavLink>
           </li>
           <li>
@@ -52,7 +52,7 @@ function AppContent() {
                 }
               }}
             >
-              Contact
+              contact
             </NavLink>
           </li>
         </ul>
@@ -60,8 +60,8 @@ function AppContent() {
 
       <main>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Portfolio' element={<Portfolio />} />
+          <Route path='/siisat' element={<Home />} />
+          <Route path='/' element={<Portfolio />} />
           <Route path='/Contact' element={<Contact />} />
         </Routes>
       </main>

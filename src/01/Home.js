@@ -15,7 +15,10 @@ function Home() {
         <p className='hero_title_3'>こんにちは、世界!</p>
       </div>
 
-      <PageTurnerSticky navOffset={39} titleSvgSrc={svg_profile} titleSvgAlt='PROFILE' />
+      <PageTurnerSticky navOffset={39}
+        titleSvgSrc={svg_profile}
+        titleSvgAlt='PROFILE'
+        backgroundColor='#4696FF' />
 
       <div className='profile'>
         <div className='profile_img_box'>

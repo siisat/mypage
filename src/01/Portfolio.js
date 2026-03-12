@@ -6,7 +6,6 @@ const COLUMNS = 7;
 const ROWS = 7;
 const TOTAL_CELLS = COLUMNS * ROWS;
 
-
 // 셀별 이미지 편집
 // 셀번호 : { src: 이미지 파일 컴포넌트, alt: 'Work 셀번호' }
 

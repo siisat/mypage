@@ -15,6 +15,7 @@ function PageTurnerSticky({
   title = 'PROFILE',
   titleSvgSrc = '',
   titleSvgAlt = 'Section Title',
+  backgroundColor = '#7f7f7f',
 }) {
   const sectionRef = useRef(null);
 
@@ -124,7 +125,7 @@ function PageTurnerSticky({
           style={{
             position: 'absolute',
             inset: 0,
-            background: '#4660bd',
+            background: backgroundColor,
             transform: `translate3d(0, ${bgY}%, 0)`,
             willChange: 'transform',
           }}

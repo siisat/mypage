@@ -31,13 +31,13 @@ li {
   position: relative;
   text-decoration: none;
   color: rgb(24, 24, 24);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
 }
 
 .nav-link:hover {
   text-decoration: none;
-  color: #F51E1E; 
+  color: #F51E1E;
 }
 
 .nav-link::after {

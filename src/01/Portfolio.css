@@ -1,21 +1,21 @@
 .portfolio-page {
   min-height: 100vh;
-  padding: 56px 48px 24px;
+  padding: 56px 0px 24px;
 }
 
 .portfolio-scroll {
   width: 100%;
-  overflow-x: auto;
+  padding: 0px 48px 0px;
+  overflow-x: hidden;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(124px, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   grid-template-rows: repeat(7, auto);
   grid-auto-flow: dense;
   gap: 40px;
   width: 100%;
-  min-width: calc((124px * 7) + (40px * 6));
   margin: 0;
 }
 
@@ -28,7 +28,7 @@
 
 .portfolio-item__index {
   font-size: 10px;
-  line-height: 4;
+  line-height: 1.6;
   letter-spacing: 0.08em;
   color: #111;
 }
@@ -36,12 +36,39 @@
 .portfolio-item__img {
   display: block;
   width: 100%;
-  height: 240px;
-  object-fit: cover;
-  background: #e9e9e9;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  object-position: left top;
+  background: transparent;
 }
 
-/* 2칸 병합 셀도 세로 길이는 동일하게 고정 */
+/* 2칸 병합 셀: 가로만 2배, 세로는 1칸과 동일 */
 .portfolio-item--span2 .portfolio-item__img {
-  height: 240px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: left top;
+}
+
+@media (max-width: 1100px) {
+  .portfolio-scroll {
+    padding: 0 24px;
+  }
+
+  .portfolio-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 820px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

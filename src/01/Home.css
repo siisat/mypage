@@ -4,34 +4,61 @@
 }
 
 .hero {
-    margin: 300px 0px 0px 200px;
+    /* margin: 300px 0px 0px 200px; */
+    position: relative;
+    margin: 120px 0 0;
+    min-height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0px; /* 세 타이틀 간 간격 */
+    padding-top: 0px;
+    padding-right: 40px;
+    overflow: visible;
+}
+
+.hero_title_1,
+.hero_title_2,
+.hero_title_3 {
+  margin: 0;
+  writing-mode: vertical-rl; /* 세로 글자 */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* 위에서 아래로 읽히게 */
+  letter-spacing: 0.02em;
+}
+
+/* 글자 간격 더 촘촘하게 */
+.hero > p + p {
+  margin-left: -5px;
 }
 
 .hero_title_1 {
     color: #000;
     font-family: Inter;
-    font-size: 100px;
+    font-size: 140px;
     font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -2px;
 }
 
 .hero_title_2 {
     color: #000;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Mono";
     font-size: 80px;
     font-style: normal;
-    font-weight: 200;
-    line-height: normal;
+    font-weight: 100;
+    line-height: 0.95;
 }
 
 .hero_title_3 {
     color: #000;
     font-family: "Pretendard JP";
-    font-size: 80px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 0.95;
+    letter-spacing: -4px;
 }
 
 
@@ -66,5 +93,3 @@
     border-style: none;
 
 }
-
-

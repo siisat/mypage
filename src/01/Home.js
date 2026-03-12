@@ -1,7 +1,9 @@
 import './Home.css';
 import PageTurnerSticky from '../components/PageTurnerSticky.js'
-import img from './profile.png'
 import svg_profile from '../components/profile.svg'
+
+import img from './profile.png'
+
 
 
 function Home() {
@@ -11,8 +13,8 @@ function Home() {
       {/* 히어로 화면 */}
       <div className='hero'>
         <p className='hero_title_1'>Hello World!</p>
-        <p className='hero_title_2'>Hallo Welt!</p>
         <p className='hero_title_3'>こんにちは、世界!</p>
+        <p className='hero_title_2'>Hallo Welt!</p>
       </div>
 
       <PageTurnerSticky navOffset={39}

@@ -1,11 +1,11 @@
 import './Portfolio.css';
-import PageTurnerSticky from '../components/PageTurnerSticky.js'
-import svg_profile from '../components/profile.svg'
+import PageTurnerSticky from '../components/PageTurnerSticky.js';
+import svg_profile from '../components/profile.svg';
 
 import timg from '../02_portfolio/test.jpg';
 
 // defalut
-import img_defalut from '../02_portfolio/img_1.png'
+import img_defalut from '../02_portfolio/img_1.png';
 
 
 // 1칸
@@ -19,6 +19,10 @@ import img10 from '../02_portfolio/img_10.png'
 import img11 from '../02_portfolio/img_11.png'
 import img14 from '../02_portfolio/img_14.png'
 import img15 from '../02_portfolio/img_15.png'
+import img17 from '../02_portfolio/img_17.png'
+import img18 from '../02_portfolio/img_18.png'
+import img19 from '../02_portfolio/img_19.png'
+import img20 from '../02_portfolio/img_20.png'
 
 
 
@@ -48,7 +52,11 @@ const singleCellConfig = {
   28: { src: img8, alt: 'Work 028' },
   31: { src: img9, alt: 'Work 031' },
   32: { src: img15, alt: 'Work 032' },
+  36: { src: img18, alt: 'Work 036' },
+  37: { src: img19, alt: 'Work 037' },
+  38: { src: img20, alt: 'Work 038' },
   43: { src: img10, alt: 'Work 043' },
+  44: { src: img17, alt: 'Work 044' },
   47: { src: img11, alt: 'Work 047' },
   
 };

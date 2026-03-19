@@ -17,7 +17,7 @@ Illustrator, Photoshop, Premiere Pro
 * 반응형 그리드   
   7*7 그리드, 이미지 2배 확장 셀 지원 가능
 * 타이포그래피 스크롤 애니메이션 인터랙션
-* 타이포그래피 svg 디자인(Illustrator)
+* Illustrator - 타이포그래피 svg 디자인
 * 디자인 시스템 고려한 설계   
   그리드 이미지 개별 편집, 스크롤 애니메이션 색상 변경 섹션 분리 -> 사용성 증가   
   스크롤 애니메이션 js파일, 그리드 이미지 파일 등 컴포넌트별 폴더 분리  
@@ -38,7 +38,12 @@ Illustrator, Photoshop, Premiere Pro
    * [👩🏻‍💻 Code](https://github.com/siisat/practice/blob/main/moms/moms_hada.py)
 
 
+### Nike 팝업스토어 웹 UI 디자인 (진행중)
+
+* Figma, Photoshop
+* 팝업스토어 안내 페이지 디자인
+   * [📂 Figma Prototype] (https://www.figma.com/proto/PLOzDYw2NgUR6RjsD0oxgm/web-project?page-id=4%3A2&node-id=323-875&viewport=-17442%2C-1541%2C0.21&t=4iPHQaA3CFnJf5cC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=102%3A388)
+ 
 
 
-        
 

@@ -35,7 +35,7 @@ Illustrator, Photoshop, Premiere Pro
     
    * [😡 기존 csv 파일](https://github.com/siisat/practice/blob/main/hada.csv)
    * [😄 추출 csv 파일](https://github.com/siisat/practice/blob/main/hada_final.csv)
-   * [👩🏻‍💻 프로그램 코드](https://github.com/siisat/practice/blob/main/moms/moms_hada.py)
+   * [👩🏻‍💻 Code](https://github.com/siisat/practice/blob/main/moms/moms_hada.py)
 
 
 

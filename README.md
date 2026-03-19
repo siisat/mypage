@@ -6,7 +6,8 @@ UXUI 디자인, 프론트엔드, 백엔드
 Figma, JS, React, CSS, Python, C++, Git, VScode
 Illustrator, Photoshop, Premiere Pro
 ```
-
+   
+   
 ## Project
 
 
@@ -15,11 +16,11 @@ Illustrator, Photoshop, Premiere Pro
 [Go to 'siisat'](https://mypage-virid.vercel.app/)
 
 * Javascript, React Router, Vercel, CSS
-* 반응형 그리드
+* 반응형 그리드   
   7*7 그리드, 이미지 2배 확장 셀 지원 가능
 * 타이포그래피 스크롤 애니메이션 인터랙션
 * 타이포그래피 svg 디자인(Illustrator)
-* 디자인 시스템 고려한 설계
+* 디자인 시스템 고려한 설계   
   그리드 이미지 개별 편집, 스크롤 애니메이션 색상 변경 섹션 분리 -> 사용성 증가
   components 폴더 > 스크롤 애니메이션 js파일, 그리드 이미지 파일 등 컨텐츠 분리
 

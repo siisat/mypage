@@ -42,7 +42,7 @@ Illustrator, Photoshop, Premiere Pro
 
 * Figma, Photoshop
 * 팝업스토어 안내 페이지 디자인
-   * [📂 Figma Prototype] (https://www.figma.com/proto/PLOzDYw2NgUR6RjsD0oxgm/web-project?page-id=4%3A2&node-id=323-875&viewport=-17442%2C-1541%2C0.21&t=4iPHQaA3CFnJf5cC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=102%3A388)
+   * [📂 Figma Prototype](https://www.figma.com/proto/PLOzDYw2NgUR6RjsD0oxgm/web-project?page-id=4%3A2&node-id=323-875&viewport=-17442%2C-1541%2C0.21&t=4iPHQaA3CFnJf5cC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=102%3A388)
  
 
 

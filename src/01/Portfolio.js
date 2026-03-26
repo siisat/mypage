@@ -3,15 +3,19 @@ import PageTurnerSticky from '../components/PageTurnerSticky.js';
 import ProjectPanelSection from '../components/ProjectPanelSection';
 
 // PageTurner 타이틀 svg 파일
-import prj_1 from '../components/prj_1.svg';
-import prj_2 from '../components/prj_2.svg';
-import prj_3 from '../components/prj_3.svg';
+import svg_prj_1 from '../components/prj_1.svg';
+import svg_prj_2 from '../components/prj_2.svg';
+import svg_prj_3 from '../components/prj_3.svg';
 
 
 // project 1 이미지
-import prj1_1 from '../02_portfolio/img_16.png';
-import prj1_2 from '../02_portfolio/img_12.png';
-import prj1_3 from '../02_portfolio/img_5.png';
+import prj1_1 from '../02_portfolio/projets/prj1_1.png';
+import prj1_2 from '../02_portfolio/projets/prj1_2.png';
+
+
+import ex_prj1_1 from '../02_portfolio/img_16.png';
+import ex_prj1_2 from '../02_portfolio/img_12.png';
+import ex_prj1_3 from '../02_portfolio/img_5.png';
 
 
 
@@ -149,13 +153,13 @@ function Portfolio() {
       </div>
 
       <PageTurnerSticky navOffset={39}
-        titleSvgSrc={prj_1}
+        titleSvgSrc={svg_prj_1}
         titleSvgAlt='PROFILE'
         backgroundColor='#8fcb64' />
 
       {/* project 01 */}
       <ProjectPanelSection
-        slides={[prj1_1, prj1_2, prj1_3]}
+        slides={[prj1_1, prj1_2, ex_prj1_3]}
         title="Allit : 올잇"
         descriptionLines={['AR 기반 쇼핑 플랫폼', '3D 제품 이미지, 배송 직전 제품 사진을 제공하여 온라인 신선식품 구매의 불안을 해소한 서비스. 2026.01-2026.03(진행중)']}
         tools="Figma"
@@ -166,13 +170,13 @@ function Portfolio() {
 
 
       <PageTurnerSticky navOffset={39}
-        titleSvgSrc={prj_2}
+        titleSvgSrc={svg_prj_2}
         titleSvgAlt='PROFILE'
         backgroundColor='#4696FF' />
 
       {/* project 02 */}
       <ProjectPanelSection
-        slides={[prj1_1, prj1_2, prj1_3]}
+        slides={[ex_prj1_1, ex_prj1_2, ex_prj1_3]}
         title="Nike"
         descriptionLines={['Web UI Redesign 프로젝트', 'Nike의 메인 슬로건 "Just do it."을 확장하여 사용자 맞춤형 서비스를 강화한 메인 페이지 기획. 2025.12-2026.03(진행중)']}
         tools="Figma Photoshop Illustrator"
@@ -183,13 +187,13 @@ function Portfolio() {
 
 
       <PageTurnerSticky navOffset={39}
-        titleSvgSrc={prj_3}
+        titleSvgSrc={svg_prj_3}
         titleSvgAlt='PROFILE'
         backgroundColor='#FF5211' />
 
       {/* project 03 */}
       <ProjectPanelSection
-        slides={[prj1_1, prj1_2, prj1_3]}
+        slides={[ex_prj1_1, ex_prj1_2, ex_prj1_3]}
         title="siisat : Personal Page"
         descriptionLines={['UXUI 포트폴리오, 포토그래피 전시용 개인 사이트', '2026.02-2026.03(진행중)']}
         tools="Javascript CSS React Vercel"

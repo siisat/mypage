@@ -156,10 +156,10 @@ function Portfolio() {
       {/* project 01 */}
       <ProjectPanelSection
         slides={[prj1_1, prj1_2, prj1_3]}
-        title="타이틀"
-        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
-        tools="사용한 툴 -----------"
-        contribution="기여도 --00% --00% --00%"
+        title="Allit : 올잇"
+        descriptionLines={['AR 기반 쇼핑 플랫폼', '3D 제품 이미지, 배송 직전 제품 사진을 제공하여 온라인 신선식품 구매의 불안을 해소한 서비스. 2026.01-2026.03(진행중)']}
+        tools="Figma"
+        contribution="기여도 25% : 메인 아이디어 기획, UX 리서치, UI 디자인, 디자인 시스템"
         ctaLabel="Prototype"
         ctaHref="https://mypage-virid.vercel.app/"
       />
@@ -173,10 +173,10 @@ function Portfolio() {
       {/* project 02 */}
       <ProjectPanelSection
         slides={[prj1_1, prj1_2, prj1_3]}
-        title="타이틀2"
-        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
-        tools="사용한 툴 -----------"
-        contribution="기여도 --00% --00% --00%"
+        title="Nike"
+        descriptionLines={['Web UI Redesign 프로젝트', 'Nike의 메인 슬로건 "Just do it."을 확장하여 사용자 맞춤형 서비스를 강화한 메인 페이지 기획. 2025.12-2026.03(진행중)']}
+        tools="Figma Photoshop Illustrator"
+        contribution="기여도 100% : 개인 프로젝트"
         ctaLabel="Prototype"
         ctaHref="https://mypage-virid.vercel.app/"
       />
@@ -190,11 +190,11 @@ function Portfolio() {
       {/* project 03 */}
       <ProjectPanelSection
         slides={[prj1_1, prj1_2, prj1_3]}
-        title="타이틀3"
-        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
-        tools="사용한 툴 -----------"
-        contribution="기여도 --00% --00% --00%"
-        ctaLabel="Prototype"
+        title="siisat : Personal Page"
+        descriptionLines={['UXUI 포트폴리오, 포토그래피 전시용 개인 사이트', '2026.02-2026.03(진행중)']}
+        tools="Javascript CSS React Vercel"
+        contribution="기여도 100% : 개인 프로젝트"
+        ctaLabel="Website(here)"
         ctaHref="https://mypage-virid.vercel.app/"
       />
 

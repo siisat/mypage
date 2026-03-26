@@ -1,5 +1,5 @@
 
-.main, .main * {
+.main, .main *, main a {
   cursor: none !important;
 }
 

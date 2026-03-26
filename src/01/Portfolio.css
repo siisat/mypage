@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .portfolio-page {
   min-height: 100vh;
   padding: 56px 0px 24px;

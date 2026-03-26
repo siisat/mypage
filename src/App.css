@@ -1,9 +1,19 @@
+
+.main, .main * {
+  cursor: none !important;
+}
+
+.navi a,
+.navi a:hover,
+.navi a:focus {
+  cursor: none !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 
 header {
   padding: 10px 10px;

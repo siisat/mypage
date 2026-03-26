@@ -1,0 +1,156 @@
+.project-panel-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project-panel-layout {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 62fr 38fr;
+  column-gap: 48px;
+  align-items: stretch;
+}
+
+.project-media-wrap {
+  min-width: 0;
+}
+
+.project-slider-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #cfcfcf;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.35s ease;
+}
+
+.project-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.project-slide--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.slide-hit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  z-index: 2;
+}
+
+.slide-hit--left {
+  left: 0;
+  cursor: w-resize;
+}
+
+.slide-hit--right {
+  right: 0;
+  cursor: e-resize;
+}
+
+.slide-hit.is-disabled,
+.slide-hit:disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* 텍스트 영역 */
+
+.project-info {
+  min-width: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  color: #000000;
+}
+
+.project-info__title {
+  margin: 0;
+  font-size: clamp(24px, 2.5vw, 28px);
+  font-weight: 600;
+}
+
+.project-info__desc {
+  margin: 0;
+  font-size: clamp(16px, 2.2vw, 20px);
+  line-height: 1.4;
+}
+
+.project-info__tools,
+.project-info__contribution {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.project-info__cta {
+  margin: 2px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid #111;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #111;
+
+  transition: background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease;
+}
+
+.project-info__cta:hover,
+.project-info__cta:focus-visible {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+@media (max-width: 1024px) {
+  .project-panel-section {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .project-panel-layout {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+
+  .project-info {
+    justify-content: flex-start;
+  }
+}
+
+.minicursor_tg, .minicursor_tg:hover {
+  cursor: none !important;
+}

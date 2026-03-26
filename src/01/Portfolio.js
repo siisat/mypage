@@ -1,12 +1,23 @@
 import './Portfolio.css';
 import PageTurnerSticky from '../components/PageTurnerSticky.js';
-import svg_profile from '../components/profile.svg';
+import ProjectPanelSection from '../components/ProjectPanelSection';
 
-import timg from '../02_portfolio/test.jpg';
+// PageTurner 타이틀 svg 파일
+import prj_1 from '../components/prj_1.svg';
+import prj_2 from '../components/prj_2.svg';
+import prj_3 from '../components/prj_3.svg';
 
+
+// project 1 이미지
+import prj1_1 from '../02_portfolio/img_16.png';
+import prj1_2 from '../02_portfolio/img_12.png';
+import prj1_3 from '../02_portfolio/img_5.png';
+
+
+
+//////////////////////////////////
 // defalut
 import img_defalut from '../02_portfolio/img_1.png';
-
 
 // 1칸
 import img2 from '../02_portfolio/img_2.png'
@@ -25,15 +36,13 @@ import img19 from '../02_portfolio/img_19.png'
 import img20 from '../02_portfolio/img_20.png'
 
 
-
 // 2칸
 import img4 from '../02_portfolio/img_4.png'
 import img5 from '../02_portfolio/img_5.png'
 import img12 from '../02_portfolio/img_12.png'
 import img13 from '../02_portfolio/img_13.png'
 import img16 from '../02_portfolio/img_16.png'
-
-
+import img21 from '../02_portfolio/img_21.jpg'
 
 const COLUMNS = 7;
 const ROWS = 7;
@@ -66,11 +75,15 @@ const singleCellConfig = {
 const doubleCellConfig = {
   5: { src: img12, span: 2, alt: 'Work 005' },
   8: { src: img16, span: 2, alt: 'Work 008' },
-  13: { src: timg, span: 2, alt: 'Work 013' },
+  13: { src: img21, span: 2, alt: 'Work 013' },
   16: { src: img4, span: 2, alt: 'Work 016' },
   22: { src: img5, span: 2, alt: 'Work 022' },
   40: { src: img13, span: 2, alt: 'Work 040' },
 };
+
+//////////////////////////////////
+
+
 
 const cellConfig = {
   ...singleCellConfig,
@@ -136,15 +149,54 @@ function Portfolio() {
       </div>
 
       <PageTurnerSticky navOffset={39}
-        titleSvgSrc={svg_profile}
+        titleSvgSrc={prj_1}
         titleSvgAlt='PROFILE'
         backgroundColor='#8fcb64' />
 
+      {/* project 01 */}
+      <ProjectPanelSection
+        slides={[prj1_1, prj1_2, prj1_3]}
+        title="타이틀"
+        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
+        tools="사용한 툴 -----------"
+        contribution="기여도 --00% --00% --00%"
+        ctaLabel="Prototype"
+        ctaHref="https://mypage-virid.vercel.app/"
+      />
 
 
-      <div className='portfolio_1'>
+      <PageTurnerSticky navOffset={39}
+        titleSvgSrc={prj_2}
+        titleSvgAlt='PROFILE'
+        backgroundColor='#4696FF' />
 
-      </div>
+      {/* project 02 */}
+      <ProjectPanelSection
+        slides={[prj1_1, prj1_2, prj1_3]}
+        title="타이틀2"
+        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
+        tools="사용한 툴 -----------"
+        contribution="기여도 --00% --00% --00%"
+        ctaLabel="Prototype"
+        ctaHref="https://mypage-virid.vercel.app/"
+      />
+
+
+      <PageTurnerSticky navOffset={39}
+        titleSvgSrc={prj_3}
+        titleSvgAlt='PROFILE'
+        backgroundColor='#FF5211' />
+
+      {/* project 03 */}
+      <ProjectPanelSection
+        slides={[prj1_1, prj1_2, prj1_3]}
+        title="타이틀3"
+        descriptionLines={['기획 설명 간단히', '기획 설명 간단히']}
+        tools="사용한 툴 -----------"
+        contribution="기여도 --00% --00% --00%"
+        ctaLabel="Prototype"
+        ctaHref="https://mypage-virid.vercel.app/"
+      />
 
     </div>
   );

@@ -39,7 +39,7 @@ function PageTurnerSticky({
 
       // Background motion: rise -> hold -> exit up
       const BG_FILL_END = 0.16;
-      const BG_HOLD_END = 0.84;
+      const BG_HOLD_END = 0.70;
 
       let nextBgY;
       if (p < BG_FILL_END) {
@@ -106,7 +106,7 @@ function PageTurnerSticky({
       aria-hidden="true"
       style={{
         position: 'relative',
-        height: '360vh',
+        height: '260vh',
         overflow: 'clip',
       }}
     >

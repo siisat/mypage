@@ -3,6 +3,7 @@ import './App.css';
 import Home from './01/Home';
 import Portfolio from './01/Portfolio';
 import Contact from './01/Contact';
+import MiniCursor from './components/MiniCursor';
 
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ function AppContent() {
   const currentLocation = useLocation();
 
   return (
-    <div>
+    <div id="invert-area">
       <header>
         <ul className='navi'>
           <li>
@@ -65,6 +66,8 @@ function AppContent() {
           <Route path='/Contact' element={<Contact />} />
         </Routes>
       </main>
+
+      {currentLocation.pathname !== '/siisat' && <MiniCursor />}
     </div>
   );
 }

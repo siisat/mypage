@@ -100,13 +100,20 @@
 .project-info__desc {
   margin: 0;
   font-size: clamp(16px, 2.2vw, 20px);
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
-.project-info__tools,
-.project-info__contribution {
+.project-info__tools {
   margin: 0;
   font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #F51E1E;
+}
+
+.project-info__contribution {
+  margin: 0;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -117,8 +124,8 @@
   justify-content: center;
   min-height: 42px;
   padding: 0 18px;
-  border: 1px solid #111;
-  border-radius: 10px;
+  border: 1.2px solid #111;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.01em;

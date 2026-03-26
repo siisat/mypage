@@ -8,15 +8,19 @@ import svg_prj_2 from '../components/prj_2.svg';
 import svg_prj_3 from '../components/prj_3.svg';
 
 
-// project 1 이미지
+// project 이미지
 import prj1_1 from '../02_portfolio/projets/prj1_1.png';
 import prj1_2 from '../02_portfolio/projets/prj1_2.png';
+import prj1_3 from '../02_portfolio/projets/prj1_3.png';
 
 
-import ex_prj1_1 from '../02_portfolio/img_16.png';
-import ex_prj1_2 from '../02_portfolio/img_12.png';
-import ex_prj1_3 from '../02_portfolio/img_5.png';
+import prj2_1 from '../02_portfolio/projets/prj2_1.png';
+import prj2_2 from '../02_portfolio/projets/prj2_2.png';
+import prj2_3 from '../02_portfolio/projets/prj2_3.png';
 
+import prj3_1 from '../02_portfolio/projets/prj3_1.png';
+import prj3_2 from '../02_portfolio/projets/prj3_2.png';
+import prj3_3 from '../02_portfolio/projets/prj3_3.png';
 
 
 //////////////////////////////////
@@ -159,12 +163,15 @@ function Portfolio() {
 
       {/* project 01 */}
       <ProjectPanelSection
-        slides={[prj1_1, prj1_2, ex_prj1_3]}
+        slides={[prj1_1, prj1_2, prj1_3]}
         title="Allit : 올잇"
-        descriptionLines={['AR 기반 쇼핑 플랫폼', '3D 제품 이미지, 배송 직전 제품 사진을 제공하여 온라인 신선식품 구매의 불안을 해소한 서비스. 2026.01-2026.03(진행중)']}
+        descriptionLines={[
+          <span style={{fontSize:16, fontWeight: 500, color: '#959595'}}>
+          2026.01-2026.03(진행중)</span>, 
+          'AR 기반 쇼핑 플랫폼', '3D 제품 이미지, 배송 직전 제품 사진을 제공하여 온라인 신선식품 구매의 불안을 해소한 서비스']}
         tools="Figma"
         contribution="기여도 25% : 메인 아이디어 기획, UX 리서치, UI 디자인, 디자인 시스템"
-        ctaLabel="Prototype"
+        ctaLabel="Prototype(준비중)"
         ctaHref="https://mypage-virid.vercel.app/"
       />
 
@@ -176,12 +183,15 @@ function Portfolio() {
 
       {/* project 02 */}
       <ProjectPanelSection
-        slides={[ex_prj1_1, ex_prj1_2, ex_prj1_3]}
+        slides={[prj2_1, prj2_2, prj2_3]}
         title="Nike"
-        descriptionLines={['Web UI Redesign 프로젝트', 'Nike의 메인 슬로건 "Just do it."을 확장하여 사용자 맞춤형 서비스를 강화한 메인 페이지 기획. 2025.12-2026.03(진행중)']}
+        descriptionLines={[
+          <span style={{fontSize:16, fontWeight: 500, color: '#959595'}}>
+          2026.01-2026.03(진행중)</span>,
+          'Web UI Redesign 프로젝트', 'Nike의 메인 슬로건 "Just do it."을 확장하여 사용자 맞춤형 서비스를 강화한 메인 페이지 기획']}
         tools="Figma Photoshop Illustrator"
         contribution="기여도 100% : 개인 프로젝트"
-        ctaLabel="Prototype"
+        ctaLabel="Prototype(준비중)"
         ctaHref="https://mypage-virid.vercel.app/"
       />
 
@@ -193,13 +203,16 @@ function Portfolio() {
 
       {/* project 03 */}
       <ProjectPanelSection
-        slides={[ex_prj1_1, ex_prj1_2, ex_prj1_3]}
+        slides={[prj3_1, prj3_2, prj3_3]}
         title="siisat : Personal Page"
-        descriptionLines={['UXUI 포트폴리오, 포토그래피 전시용 개인 사이트', '2026.02-2026.03(진행중)']}
+        descriptionLines={[
+          <span style={{fontSize:16, fontWeight: 500, color: '#959595'}}>
+          2026.02-2026.03(진행중)</span>,
+          'UXUI 포트폴리오, 포토그래피 전시용 개인 사이트']}
         tools="Javascript CSS React Vercel"
         contribution="기여도 100% : 개인 프로젝트"
-        ctaLabel="Website(here)"
-        ctaHref="https://mypage-virid.vercel.app/"
+        ctaLabel="Code(Git)"
+        ctaHref="https://github.com/siisat/mypage"
       />
 
     </div>

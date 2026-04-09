@@ -12,6 +12,10 @@ import svg_prj_3 from '../components/prj_3.svg';
 import prj1_1 from '../02_portfolio/projets/prj1_1.png';
 import prj1_2 from '../02_portfolio/projets/prj1_2.png';
 import prj1_3 from '../02_portfolio/projets/prj1_3.png';
+import prj1_4 from '../02_portfolio/projets/prj1_4.png';
+import prj1_5 from '../02_portfolio/projets/prj1_5.png';
+import prj1_6 from '../02_portfolio/projets/prj1_6.png';
+
 
 
 import prj2_1 from '../02_portfolio/projets/prj2_1.png';
@@ -163,7 +167,7 @@ function Portfolio() {
 
       {/* project 01 */}
       <ProjectPanelSection
-        slides={[prj1_1, prj1_2, prj1_3]}
+        slides={[prj1_1, prj1_2, prj1_3, prj1_4, prj1_5, prj1_6]}
         title="Allit : 올잇"
         descriptionLines={[
           <span style={{fontSize:16, fontWeight: 500, color: '#959595'}}>

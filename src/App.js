@@ -67,7 +67,7 @@ function AppContent() {
         </Routes>
       </main>
 
-      {currentLocation.pathname !== '/siisat' && <MiniCursor />}
+      <MiniCursor/>
     </div>
   );
 }

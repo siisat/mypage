@@ -48,6 +48,11 @@
     font-weight: 500;
 }
 
+.job {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .major {
     font-size: 16px;
     line-height: 1.6;
@@ -141,6 +146,7 @@
     margin-top: 120px;
 }
 
+/* 
 .lens {
     position: fixed;
     left: 0;
@@ -163,4 +169,4 @@
     -webkit-backdrop-filter: blur(4px);
 
     transition: transform 0.04s linear;
-}
+} */

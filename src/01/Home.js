@@ -1,42 +1,43 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import './Home.css';
 import img from './profile.png'
 
+
 function Home() {
-    useEffect(() => {
-    const lens = document.querySelector('.lens');
-    if (!lens) return;
+  //   useEffect(() => {
+  //   const lens = document.querySelector('.lens');
+  //   if (!lens) return;
 
-    let targetX = 0;
-    let targetY = 0;
-    let currentX = 0;
-    let currentY = 0;
+  //   let targetX = 0;
+  //   let targetY = 0;
+  //   let currentX = 0;
+  //   let currentY = 0;
 
-    const speed = 0.08; // 0.08~0.2
+  //   const speed = 0.08; // 0.08~0.2
 
-    const move = (e) => {
-      targetX = e.clientX;
-      targetY = e.clientY;
-    };
+  //   const move = (e) => {
+  //     targetX = e.clientX;
+  //     targetY = e.clientY;
+  //   };
 
-    const tick = () => {
-      currentX += (targetX - currentX) * speed;
-      currentY += (targetY - currentY) * speed;
+  //   const tick = () => {
+  //     currentX += (targetX - currentX) * speed;
+  //     currentY += (targetY - currentY) * speed;
 
-      lens.style.left = `${currentX}px`;
-      lens.style.top = `${currentY}px`;
+  //     lens.style.left = `${currentX}px`;
+  //     lens.style.top = `${currentY}px`;
 
-      requestAnimationFrame(tick);
-    };
+  //     requestAnimationFrame(tick);
+  //   };
 
-    window.addEventListener('pointermove', move, { passive: true });
-    const raf = requestAnimationFrame(tick);
+  //   window.addEventListener('pointermove', move, { passive: true });
+  //   const raf = requestAnimationFrame(tick);
 
-    return () => {
-      window.removeEventListener('pointermove', move);
-      cancelAnimationFrame(raf);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('pointermove', move);
+  //     cancelAnimationFrame(raf);
+  //   };
+  // }, []);
 
 
   return (
@@ -49,6 +50,8 @@ function Home() {
 
         <div className='profile_info'>
           <h3 className='name'>세린</h3>
+          <p className='job'>UXUI Designer</p>
+          <p className='job'>Frontend Developer</p>
           <p className='major'>화학과 전공</p>
           <p className='major'>임베디드소프트웨어 연계전공</p>
         </div>
@@ -73,7 +76,7 @@ function Home() {
         <p className='hero_title_2'>Hallo Welt!</p>
       </div>
 
-      <div className="lens" aria-hidden="true" />
+      {/* <div className="lens" aria-hidden="true" /> */}
     </div>
   );
 }
